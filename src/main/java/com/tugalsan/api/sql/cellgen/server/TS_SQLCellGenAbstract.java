@@ -1,9 +1,9 @@
 package com.tugalsan.api.sql.cellgen.server;
 
 import com.tugalsan.api.runnable.client.*;
-import com.tugalsan.api.pack.client.*;
+import com.tugalsan.api.tuple.client.*;
 
-abstract public class TS_SQLCellGenAbstract<E, V> implements TGS_RunnableType1<TGS_Pack1<V>> {
+abstract public class TS_SQLCellGenAbstract<E, V> implements TGS_RunnableType1<TGS_Tuple1<V>> {
 
     public TS_SQLCellGenAbstract(E executor, int colIdx) {
         this.executor = executor;
@@ -13,7 +13,7 @@ abstract public class TS_SQLCellGenAbstract<E, V> implements TGS_RunnableType1<T
     final protected int colIdx;
 
     @Override
-    public void run(TGS_Pack1<V> generatedValue) {
+    public void run(TGS_Tuple1<V> generatedValue) {
         generatedValue.value0 = val();
     }
 
