@@ -1,9 +1,10 @@
 package com.tugalsan.api.sql.cellgen.server;
 
 import com.tugalsan.api.runnable.client.*;
-import com.tugalsan.api.tuple.client.*;
+import com.tugalsan.api.tuple.client.TGS_Tuple1;
+import com.tugalsan.api.union.client.TGS_UnionExcuse;
 
-abstract public class TS_SQLCellGenAbstract<E, V> implements TGS_RunnableType1<TGS_Tuple1<V>> {
+abstract public class TS_SQLCellGenAbstract<E, V> implements TGS_RunnableType1<TGS_Tuple1<TGS_UnionExcuse<V>>> {
 
     public TS_SQLCellGenAbstract(E executor, int colIdx) {
         this.executor = executor;
@@ -13,9 +14,9 @@ abstract public class TS_SQLCellGenAbstract<E, V> implements TGS_RunnableType1<T
     final protected int colIdx;
 
     @Override
-    public void run(TGS_Tuple1<V> generatedValue) {
+    public void run(TGS_Tuple1<TGS_UnionExcuse<V>> generatedValue) {
         generatedValue.value0 = val();
     }
 
-    abstract public V val();
+    abstract public TGS_UnionExcuse<V> val();
 }

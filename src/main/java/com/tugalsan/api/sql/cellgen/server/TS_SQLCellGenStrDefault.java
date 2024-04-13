@@ -1,5 +1,7 @@
 package com.tugalsan.api.sql.cellgen.server;
 
+import com.tugalsan.api.union.client.TGS_UnionExcuse;
+
 public class TS_SQLCellGenStrDefault<E> extends TS_SQLCellGenAbstract<E, String> {
 
     public TS_SQLCellGenStrDefault(E executor, int colIdx) {
@@ -7,7 +9,7 @@ public class TS_SQLCellGenStrDefault<E> extends TS_SQLCellGenAbstract<E, String>
     }
 
     @Override
-    public String val() {
-        return "";
+    public TGS_UnionExcuse<String> val() {
+        return TGS_UnionExcuse.of("");
     }
 }
