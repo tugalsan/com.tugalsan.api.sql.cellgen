@@ -1,6 +1,6 @@
 package com.tugalsan.api.sql.cellgen.server;
 
-import com.tugalsan.api.string.server.*;
+import com.tugalsan.api.string.client.*;
 
 public class TS_SQLCellGenBytesStrDefault<E> extends TS_SQLCellGenAbstract<E, byte[]> {
 
@@ -10,6 +10,6 @@ public class TS_SQLCellGenBytesStrDefault<E> extends TS_SQLCellGenAbstract<E, by
 
     @Override
     public byte[] val() {
-        return TS_StringUtils.toByte("");
+        return TGS_StringUtils.jre().toByte("");
     }
 }
