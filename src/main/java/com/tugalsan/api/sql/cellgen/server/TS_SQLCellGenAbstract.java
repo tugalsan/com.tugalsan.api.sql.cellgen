@@ -1,10 +1,10 @@
 package com.tugalsan.api.sql.cellgen.server;
 
 
-import com.tugalsan.api.callable.client.TGS_CallableType1Void;
+import com.tugalsan.api.callable.client.TGS_CallableType1_Run;
 import com.tugalsan.api.tuple.client.*;
 
-abstract public class TS_SQLCellGenAbstract<E, V> implements TGS_CallableType1Void<TGS_Tuple1<V>> {
+abstract public class TS_SQLCellGenAbstract<E, V> implements TGS_CallableType1_Run<TGS_Tuple1<V>> {
 
     public TS_SQLCellGenAbstract(E executor, int colIdx) {
         this.executor = executor;
