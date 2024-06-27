@@ -1,5 +1,5 @@
 module com.tugalsan.api.sql.cellgen {
-    requires com.tugalsan.api.callable;
+    requires com.tugalsan.api.function;
     requires com.tugalsan.api.tuple;
     requires com.tugalsan.api.string;
     requires com.tugalsan.api.time;
