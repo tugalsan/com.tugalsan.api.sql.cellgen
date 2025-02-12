@@ -1,5 +1,7 @@
 package com.tugalsan.api.sql.cellgen.server;
 
+import com.tugalsan.api.time.client.TGS_TimeUtils;
+
 public class TS_SQLCellGenLngDateDefault<E> extends TS_SQLCellGenAbstract<E, Long> {
 
     public TS_SQLCellGenLngDateDefault(E executor, int colIdx) {
@@ -8,6 +10,6 @@ public class TS_SQLCellGenLngDateDefault<E> extends TS_SQLCellGenAbstract<E, Lon
 
     @Override
     public Long val() {
-        return 20000000L;
+        return TGS_TimeUtils.zeroDateLng();
     }
 }
