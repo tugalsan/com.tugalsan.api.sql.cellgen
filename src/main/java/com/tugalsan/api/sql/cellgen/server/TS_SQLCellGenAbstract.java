@@ -1,10 +1,10 @@
 package com.tugalsan.api.sql.cellgen.server;
 
 
-import com.tugalsan.api.function.client.maythrow.uncheckedexceptions.TGS_FuncMTUCE_In1;
+import com.tugalsan.api.function.client.maythrowexceptions.unchecked.TGS_FuncMTU_In1;
 import com.tugalsan.api.tuple.client.*;
 
-abstract public class TS_SQLCellGenAbstract<E, V> implements TGS_FuncMTUCE_In1<TGS_Tuple1<V>> {
+abstract public class TS_SQLCellGenAbstract<E, V> implements TGS_FuncMTU_In1<TGS_Tuple1<V>> {
 
     public TS_SQLCellGenAbstract(E executor, int colIdx) {
         this.executor = executor;
