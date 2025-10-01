@@ -1,6 +1,6 @@
 package com.tugalsan.api.sql.cellgen.server;
 
-import com.tugalsan.api.time.client.TGS_Time;
+import module com.tugalsan.api.time;
 
 public class TS_SQLCellGenLngTimeCur<E> extends TS_SQLCellGenAbstract<E, Long> {
 

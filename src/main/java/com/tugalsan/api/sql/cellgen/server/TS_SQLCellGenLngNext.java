@@ -1,8 +1,8 @@
 package com.tugalsan.api.sql.cellgen.server;
 
+import module com.tugalsan.api.sql.conn;
+import module com.tugalsan.api.sql.max;
 import java.util.*;
-import com.tugalsan.api.sql.conn.server.*;
-import com.tugalsan.api.sql.max.server.*;
 
 public class TS_SQLCellGenLngNext<E> extends TS_SQLCellGenAbstract<E, Long> {
 

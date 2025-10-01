@@ -1,6 +1,6 @@
 package com.tugalsan.api.sql.cellgen.server;
 
-import com.tugalsan.api.string.client.*;
+import module com.tugalsan.api.string;
 
 public class TS_SQLCellGenBytesStrDefault<E> extends TS_SQLCellGenAbstract<E, byte[]> {
 

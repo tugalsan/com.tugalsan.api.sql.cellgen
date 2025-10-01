@@ -1,8 +1,7 @@
 package com.tugalsan.api.sql.cellgen.server;
 
-
-import com.tugalsan.api.function.client.maythrowexceptions.unchecked.TGS_FuncMTU_In1;
-import com.tugalsan.api.tuple.client.*;
+import module com.tugalsan.api.function;
+import module com.tugalsan.api.tuple;
 
 abstract public class TS_SQLCellGenAbstract<E, V> implements TGS_FuncMTU_In1<TGS_Tuple1<V>> {
 
